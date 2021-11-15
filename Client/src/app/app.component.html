@@ -1,0 +1,124 @@
+<!-- HTML for Frontend -->
+
+<div class="container-fluid">
+  <div class="row row-nav">
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="https://calculator.platform.uno/" target="_blank" rel="noopener noreferrer">
+          <img src="../assets/Images/IconCal.png" alt="Calculator Icon" width="30" height="24" class="d-inline-block align-text-top">
+          Windows Calculator <em>by Fareeda Ragab</em>
+        </a>
+      </div>
+    </nav>
+  </div>
+
+  <div class="row row-1">
+    <input disabled placeholder="" type="text" autofocus value="{{input}}">
+  </div>
+
+  <div class="row row-2">
+    <input disabled placeholder="" type="text" [value]=result>
+  </div>
+
+  <div class="row row-3">
+    <!-- For auto Column generation -->
+    <button class="col operation" (click)="pressModule()">&percnt;</button>
+    <button class="col clear" (click)="clearCE()">CE</button>
+    <button class="col clear-all" (click)="clearAll()">C</button>
+    <button class="col backSpace" (click)="pressSpaceBack()">⌫</button>
+  </div>
+
+  <div class="row row-4">
+    <button class="col operation" (click)="pressOneOverX()"> &#185;/&#x2093; </button>
+    <button class="col operation square-op" (click)="pressSquarePow()">x&#178;</button>
+    <button class="col operation" (click)="pressSquareRoot()">&radic;x</button>
+    <button class="col operation" (click)="pressOperator('÷')">&divide;</button>
+  </div>
+
+  <div class="row row-5">
+    <button class="col num" (click)="pressNum('7')">7</button>
+    <button class="col num" (click)="pressNum('8')">8</button>
+    <button class="col num" (click)="pressNum('9')">9</button>
+    <button class="col operation" (click)="pressOperator('×')">&times;</button>
+  </div>
+
+  <div class="row row-6">
+    <button class="col num" (click)="pressNum('4')">4</button>
+    <button class="col num" (click)="pressNum('5')">5</button>
+    <button class="col num" (click)="pressNum('6')">6</button>
+    <button class="col operation" (click)="pressOperator('-')">&minus;</button>
+  </div>
+
+  <div class="row row-7">
+    <button class="col num" (click)="pressNum('1')">1</button>
+    <button class="col num" (click)="pressNum('2')">2</button>
+    <button class="col num" (click)="pressNum('3')">3</button>
+    <button class="col operation" (click)="pressOperator('+')">&plus;</button>
+  </div>
+
+  <div class="row row-8">
+    <button class="col plus-minus" (click)="plusMinus()">&plusmn;</button>
+    <button class="col zero num" (click)="pressNum('0')">0</button>
+    <button class="col dot" (click)="pressNum('.')">&#8729;</button>
+    <button class="col equal" (click)="pressEqual()">&equals;</button>
+  </div>
+</div>
+
+
+
+
+<!--
+<div class="container">
+
+  <div>
+    <input placeholder="" type="text" disabled autofocus value="{{input}}">
+  </div>
+
+  <div>
+    <input placeholder="0" type="text" disabled [value]=result>
+  </div>
+
+  <div class="row-1">
+    <button class="operation" (click)="pressModule()">&percnt;</button>
+    <button class="clear" (click)="clearCE()">CE</button>
+    <button class="clear-all" (click)="clearAll()">C</button>
+    <button class="backSpace" (click)="pressSpaceBack()">⌫</button>
+  </div>
+
+  <div class="row-2">
+    <button class="operation" (click)="pressOneOverX()"> &#185;/&#x2093; </button>
+    <button class="operation square-op" (click)="pressSquarePow()">x&#178;</button>
+    <button class="operation" (click)="pressSquareRoot()">&radic;x</button>
+    <button class="operation" (click)="pressOperator('÷')">&divide;</button>
+  </div>
+
+  <div class="row-3">
+    <button class="num" (click)="pressNum('7')">7</button>
+    <button class="num" (click)="pressNum('8')">8</button>
+    <button class="num" (click)="pressNum('9')">9</button>
+    <button class="operation" (click)="pressOperator('×')">&times;</button>
+  </div>
+
+  <div class="row-4">
+    <button class="num" (click)="pressNum('4')">4</button>
+    <button class="num" (click)="pressNum('5')">5</button>
+    <button class="num" (click)="pressNum('6')">6</button>
+    <button class="operation" (click)="pressOperator('-')">&minus;</button>
+  </div>
+
+  <div class="row-5">
+    <button class="num" (click)="pressNum('1')">1</button>
+    <button class="num" (click)="pressNum('2')">2</button>
+    <button class="num" (click)="pressNum('3')">3</button>
+    <button class="operation" (click)="pressOperator('+')">&plus;</button>
+  </div>
+
+  <div class="row-6">
+    <button class="plus-minus" (click)="plusMinus()">&plusmn;</button>
+    <button class="zero num" (click)="pressNum('0')">0</button>
+    <button class="dot" (click)="pressNum('.')">&#8729;</button>
+    <button class="equal" (click)="pressEqual()">&equals;</button>
+  </div>
+
+</div>
+-->

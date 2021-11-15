@@ -1,7 +1,6 @@
 #  Calculator
-<br>
 
-## [Windows Web Based Calculator](https://calculator.platform.uno/) using:
+[Windows Web Based Calculator](https://calculator.platform.uno/) using:
 
 - Angular 12 as Client Side
 - Spring Boot as Server Side
